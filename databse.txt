@@ -1,0 +1,30 @@
+create table student10023(studentname varchar(30),studentid number(10),studentmarks number(30));
+insert into student10023 values('Priya',101,79);
+insert into student10023 values('Shivika',102,98);
+select * from student10023;
+commit;
+
+
+create table Login100233(Username varchar(30),Userid number generated always as identity ,UserPassword varchar(40),Gender varchar(40));
+drop table Login10023;
+insert into Login100233 values('Disha',seq11111.nextval,'disha1116','female');
+select * from Login100233;
+
+create table Login100233(Username varchar(30),Userid varchar(40) primary key ,UserPassword varchar(40),Gender varchar(40));
+drop table Login100233;
+
+create sequence seq11111
+minvalue 1
+start with 1
+increment by 1
+cache 10;
+
+
+
+create table customer_priya(customer_id number(10) generated always as identity not null,customer_code varchar(10) not null,customer_name varchar(30) not null,customer_address1 varchar(100)not null,customer_address2 varchar(100),customer_pin_code number(6) not null,email_address varchar(100) not null,contact_number number(20),primary_contact_person varchar(100) not null,record_status varchar(1) not null,active_inactive_flag varchar(1) not null,create_date date not null,created_by varchar(30) not null,modified_date date, modified_by varchar(30),authorized_date date,authorized_by varchar(30), primary key(customer_code)); 
+ 
+drop table customer_priya;
+select * from customer_priya;
+create table customer_priya(customer_code varchar(10) not null,customer_name varchar(30) not null,customer_address1 varchar(100)not null,customer_address2 varchar(100),customer_pin_code number(6) not null,email_address varchar(100) not null,contact_number number(20),primary_contact_person varchar(100) not null,record_status varchar(1) not null,active_inactive_flag varchar(1) not null,create_date date not null,created_by varchar(30) not null,modified_date date, modified_by varchar(30),authorized_date date,authorized_by varchar(30)); 
+delete from customer_priya;
+commit;
